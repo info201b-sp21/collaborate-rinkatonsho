@@ -45,6 +45,8 @@ voterturnout <- function(voterto){
 source("R/figure1.R")
 print(fig1())
 ```
+
+
 I have plotted the comparison of total votes between the parties in the US.
 The methods I used are summarizing the data reverse rows and columns and plot
 them in bar plots. The result shows There are more democrat votes overall in the
@@ -55,6 +57,8 @@ US.
 source("R/figure2.R")
 print(fig2())
 ```
+
+
 I have plotted the comparison of total votes in the Washington state over time.
 The methods I used are filtering out data from Washington state, grouping them by year
 summarizing the total votes over time and plot them in line plots. 
