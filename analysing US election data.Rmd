@@ -1,6 +1,6 @@
 ---
 title: "Analysing US Election Data"
-author: "Rinka Tonsho"
+author: "Rinka Tonsho, Eric Yu"
 date: "5/18/2021"
 output: html_document
 ---
