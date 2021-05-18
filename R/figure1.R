@@ -15,7 +15,7 @@ fig1 <- function(){
     geom_bar(width = .7, stat="identity")+
     scale_fill_manual("parties", values = c("democrat" = "deepskyblue", "republican" = "coral1")) +
     labs(
-      title = "Comparison Of total Votes Between The Two Parties",
+      title = "Comparison Of total votes between the two parties in US",
       x = "Parties",
       y = "Votes",
       color = "Parties"
