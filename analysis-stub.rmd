@@ -19,4 +19,5 @@ source('R/fig1.R')
 source("R/table1.R")
 ```
 
-Our analysis contains information about `r nYears()` elections...
+## Data Description
+this is our analysis
