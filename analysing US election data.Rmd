@@ -7,6 +7,7 @@ output: html_document
 
 ## In this report we analyze the US election data from 2000 to 2020, sourced by Canvas, Tony McGovern’s repo on Github, census fips code, and Github. We pick patterns and trends in this data
 
+
 ## A function that takes state and returns total votes for that state
 ```{r}
 describedata <- function(electionstate) {
