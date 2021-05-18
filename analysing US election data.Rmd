@@ -1,0 +1,39 @@
+---
+title: "Analysing US Election Data"
+author: "Rinka Tonsho"
+date: "5/18/2021"
+output: html_document
+---
+
+## In this report we analyze the US election data from 2000 to 2020, sourced by Canvas, Tony McGovern’s repo on Github, census fips code, and Github. We pick patterns and trends in this data
+
+## A function that takes state and returns total votes for that state
+```{r}
+describedata <- function(electionstate) {
+  elections %>%
+    filter(state == electionstate) %>%
+    summarise(totalvotes = sum(totalvotes)) %>%
+    pull(totalvotes)
+}
+```
+
+## A function that takes total votes and produces a mean for that year
+```{r}
+Mean <- function(electionmean) {
+	elections %>%
+    filter(state == electionmean) %>%
+    summarise(totalvotes = mean(totalvotes)) %>%
+    pull(totalvotes)
+}
+```
+
+## A function that takes in total votes and population to calculate the voterturnout
+```{r}
+voterturnout <- funtion(voterto){
+  elections %>%
+    filter(totalvotes, population == voterto) %>%
+    summarise(totalvotes, population == totalvotes/population*100)%>%
+    pull(totalvotes, population)
+  }
+```
+
