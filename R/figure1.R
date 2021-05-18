@@ -8,7 +8,6 @@ sum <- ele_res %>%
 sum <- as.data.frame(t(sum))
 sum$sides <- rownames(sum)
 
-test <- 1
 
 fig1 <- function(){
   p<-ggplot(data=sum, aes(x=sides, y=V1, fill=sides)) +
