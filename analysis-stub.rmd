@@ -1,0 +1,22 @@
+---
+title: "US recent presidential elections"
+author: "Ott Toomet"
+output:
+  html_document: default
+---
+
+
+```{r setup, include=FALSE}
+## this is the code chunk for R setup.
+## You may load libraries and your google key here
+## You can also set various knitr options here
+knitr::opts_chunk$set(echo=FALSE, message=FALSE)
+library(dplyr)
+source('R/summary.R')
+                           # contains a function `nYears()` that tell how many
+                           # different election years is in data
+source('R/fig1.R')
+source("R/table1.R")
+```
+
+Our analysis contains information about `r nYears()` elections...
