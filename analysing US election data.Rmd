@@ -1,9 +1,12 @@
 ---
 title: "Analysing US Election Data"
-author: "Rinka Tonsho"
+author: "Rinka Tonsho, Eric Yu"
 date: "5/18/2021"
 output: html_document
 ---
+```{r, echo=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
+```
 
 ## In this report we analyze the US election data from 2000 to 2020, sourced by Canvas, Tony McGovern’s repo on Github, census fips code, and Github. We pick patterns and trends in this data
 
@@ -30,7 +33,7 @@ Mean <- function(electionmean) {
 
 ## A function that takes in total votes and population to calculate the voterturnout
 ```{r}
-voterturnout <- funtion(voterto){
+voterturnout <- function(voterto){
   elections %>%
     filter(totalvotes, population == voterto) %>%
     summarise(totalvotes, population == totalvotes/population*100)%>%
@@ -38,3 +41,27 @@ voterturnout <- funtion(voterto){
   }
 ```
 
+## Figure 1
+```{r}
+source("R/figure1.R")
+print(fig1())
+```
+
+
+I have plotted the comparison of total votes between the parties in the US.
+The methods I used are summarizing the data reverse rows and columns and plot
+them in bar plots. The result shows There are more democrat votes overall in the
+US.
+
+## Figure 2
+```{r}
+source("R/figure2.R")
+print(fig2())
+```
+
+
+I have plotted the comparison of total votes in the Washington state over time.
+The methods I used are filtering out data from Washington state, grouping them by year
+summarizing the total votes over time and plot them in line plots. 
+The result shows votes in both parties has increased over time but 
+votes for the democrat party increased in a steeper rate.

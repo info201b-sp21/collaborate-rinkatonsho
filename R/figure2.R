@@ -2,7 +2,7 @@ library(tidyverse)
 library(maps)
 library(dplyr)
 
-ele_res <- read.csv("data/election_result.csv", sep = "\t")
+ele_res <- read.csv("R/data/election_result.csv", sep = "\t")
 
 WA_data <- ele_res %>%
   filter(state2 == "WA") %>%
