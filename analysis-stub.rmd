@@ -21,3 +21,16 @@ source("R/table1.R")
 
 ## Data Description
 this is our analysis
+
+
+## Data Description
+In this report we analyze the US election data from 2000 to 2020, sourced by Canvas, Tony McGovern’s repo on Github, census fips code, and Github. We pick patterns and trends in this data
+
+
+## A function that takes state and returns total votes for that state
+This function takes in the state filtered out by the total vote, and produces an outcome that summarizes the total votes per state.
+## A function that takes total votes and produces a mean for that state
+This function takes in the state filtered out by the mean of the total votes, and it produces an outcome that summarizes the mean of the total votes.
+
+## A function that takes in income and returns votes according to income
+This function takes in income and the year of the votes filtered out by year, and produces an outcome that summarizes income and total votes.
